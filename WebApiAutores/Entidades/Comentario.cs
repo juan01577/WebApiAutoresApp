@@ -1,0 +1,15 @@
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace WebApiAutores.Entidades
+{
+    public class Comentario
+    {
+        public int Id { get; set; }
+        public string Contenido { get; set; }
+        public int Libroid { get; set; }
+        public Libro libro { get; set; }
+        public string  UsuarioId { get; set; }
+        public IdentityUser Usuario { get; set; }
+
+    }
+}
